@@ -108,22 +108,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
 
-}
-.service__white-block {
-  height: 10px;
-  width: 50px;
-  background: #ffff;
-  margin-bottom: 15px;
-  opacity: 1;
-}
 .service__text {
   font-size: 15px;
   opacity: 1;
+  position: relative;
 }
 .service__title {
   text-transform: uppercase;
   font-size: 20px;
+  position: relative;
 }
 
 .corporate-business {
@@ -296,11 +291,16 @@ body {
   height: 51.5625rem
 }
 
-.service__white-block {
+.service__text:after, .service__title:after{
+  content: "";
+  position: absolute;
   height: 2.75rem;
   width: 9rem;
-  margin-bottom: 3.4375rem;
+  top: -5.4375rem;
+  left: 0;
+  background: #fff;
 }
+
 .service__text {
   font-size: 2.3125rem;
 }

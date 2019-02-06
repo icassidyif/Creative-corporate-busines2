@@ -1,4 +1,4 @@
-const defaultWrapperWidth = 3080;
+const defaultWrapperWidth = 3000;
 
 function resize(){
 var widthWindow = window.innerWidth;
