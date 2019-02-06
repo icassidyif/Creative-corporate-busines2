@@ -13,4 +13,4 @@ resize();
 
 window.addEventListener('resize', _.debounce(e => {
 resize();
-}, 100));
+}, 50));

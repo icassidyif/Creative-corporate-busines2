@@ -24,7 +24,6 @@ body {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding: 0 10px;
 }
 
 .wrapper_full-width {
@@ -59,6 +58,11 @@ body {
 .corporate-dusiness-section {
   background: #242a31;
 }
+.headline-section {
+  background-image: url("../img/bg.png") ; 
+  background-size: cover;
+  background-position: 50%;
+}
 /*HEADER--------------------------------------------*/
 .logo {
   display: flex;
@@ -89,14 +93,14 @@ body {
   background: #fff;
   color: #fbcc4b;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 .award__text {
   text-align: right;
   font-weight: 800;
   font-size: 17px;
-  margin-right: 10px;
+  
 }
 /*--------------------------------------*/
 .service {
@@ -129,7 +133,7 @@ body {
   justify-content: center;
   text-align: right;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 .corporate-business__title {
@@ -148,6 +152,95 @@ body {
   margin-left: auto;
   font-size: 15px; 
 }
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*height: 62.5rem;*/
+  background: #242a31; 
+  position: relative;
+  color: #fff;
+  padding: 20px;
+
+}
+.contacts ul {
+  list-style: none;
+}
+.contacts li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.contacts a {
+  font-size: 14px;
+  color: #ddae27;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contacts img {
+  width: 25px;
+  margin-right: 20px;
+}
+.headline {
+  padding: 20px;
+  text-align: right;
+  position: relative;
+}
+.headline__back-overlay {
+  position: absolute;
+  background: #2ab2d8;
+  opacity: .5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.headline__title {
+  position: relative;
+  font-size: 40px;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  z-index: 2;
+}
+.headline__text {
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffff;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+.headline__text_black {
+  color: #242a31;
+}
+
+.logo-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #386678;
+  position: relative;
+  padding: 20px;
+ 
+}
+
+.logo-block img {
+  height: 15px;
+  margin: 10px;
+}
+
+
+
+
+
 /*--------------------------------------*/
 @media screen and (min-width: 800px) {
   .column-1-3 {
@@ -161,8 +254,6 @@ body {
     padding: 0 0.625rem;
     max-width: 130rem;
   }
-
-
   .yellow-block{
     padding: 9.375rem 6.25rem;
   }
@@ -201,6 +292,10 @@ body {
 .service {
   height: 65rem;
 }
+.service_headline {
+  height: 51.5625rem
+}
+
 .service__white-block {
   height: 2.75rem;
   width: 9rem;
@@ -210,7 +305,9 @@ body {
   font-size: 2.3125rem;
 }
 .service__title {
-  font-size: 6.125rem;
+  font-size: 4.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .corporate-business {
@@ -239,4 +336,117 @@ body {
   font-size: 2.3125rem; 
   max-width: 75.625rem;
 }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 62.5rem;
+  background: #242a31; 
+  position: relative;
+  color: #fff;
+
 }
+
+.contacts:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1000px;
+  top: 0;
+  right: 100%;
+  display: block;
+  background: #242a31; 
+}
+
+.contacts ul {
+  list-style: none;
+}
+
+.contacts li {
+  display: flex;
+  align-items: center;
+  font-size: 2.590625rem;
+  margin-bottom: 8rem;
+}
+.contacts a {
+  font-size: 2.590625rem;
+  color: #ddae27;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contacts img {
+  width: 4.6875rem;
+  margin-right: 3.75rem;
+}
+.headline {
+  padding: 5rem 0;
+  height: 90.3125rem;
+  position: relative;
+  text-align: right;
+}
+.headline__back-overlay {
+  position: absolute;
+  background: #2ab2d8;
+  opacity: .5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.headline__back-overlay:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background: #2ab2d8;
+}
+.headline__title {
+  position: relative;
+  font-size: 11.25rem;
+  line-height: 17rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  z-index: 2;
+}
+.headline__text {
+  position: relative;
+  font-size: 2.3125rem;
+  font-weight: 700;
+  color: #ffff;
+  z-index: 2;
+  margin-bottom: 5rem;
+}
+.headline__text_black {
+  color: #242a31;
+}
+
+.logo-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #386678;
+  position: relative;
+  height: 23.60rem;
+ 
+}
+.logo-block:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background: #386678;
+}
+.logo-block img {
+  height: 4.5rem;
+  margin: 4rem;
+}
+}
+
